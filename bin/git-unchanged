@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#
+# $ git unchanged [<path>]
+#
+# Mark a path as unchanged.
+#
+
+FILEPATH="$1"
+if [ -n "$FILEPATH" ]
+then
+    git update-index --assume-unchanged "$FILEPATH"
+fi
