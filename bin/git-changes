@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#
+# $ git changes [<commit>]
+#
+# Display the changes in a commit.
+#
+
+COMMIT="$1"
+if [ -z "$COMMIT" ]
+then
+    COMMIT='HEAD'
+fi
+
+git show "$COMMIT"
