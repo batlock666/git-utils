@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#
+# $ git not-unchanged [<path>]
+#
+# Unmark a path as unchanged.
+#
+
+FILEPATH="$1"
+if [ -n "$FILEPATH" ]
+then
+    git update-index --no-assume-unchanged "$FILEPATH"
+fi
