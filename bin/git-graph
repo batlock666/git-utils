@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#
+# $ git graph
+#
+# Show all commit logs in a graph.
+#
+
+git log --all --graph --oneline --decorate
