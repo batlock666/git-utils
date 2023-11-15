@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#
+# $ git release <version>
+#
+# Release a new version.
+#
+
+VERSION="$1"
+git tag -a -m "Tag version $VERSION" "$VERSION" main
+git push origin main "$VERSION"
